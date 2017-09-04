@@ -24,6 +24,7 @@ public class Calculadora {
                     System.out.println("1.-Perimetro Circulo");
                     System.out.println("2.-Perimetro Cuadrado");
                     System.out.println("3.-Perimetro Triangulo Equilatero");
+                    System.out.println("4.-Perimetro Rectangulo");
                     opcion = lector.nextInt();
 
                     if (opcion == 1) {
@@ -44,12 +45,25 @@ public class Calculadora {
                         int lado = lector.nextInt();
                         double areaT = lado * 3;
                         System.out.println("El Perimetro del Triangulo es: " + areaT);
+                        
                     }
+                     if (opcion == 4) {
+                        System.out.println("Ingrese la base del Rectangulo");
+                        int lado = lector.nextInt();
+                        System.out.println("Ingrese la altura del Rectangulo");
+                        int altura = lector.nextInt();
+                        double areaR = (lado*2)+(altura*2);
+                        System.out.println("El Perimetro del Rectangulo es: " + areaR);
+                        
+                    }
+                    
+                    
                     break;
                 case 2:
                     System.out.println("1.-Area Circulo");
                     System.out.println("2.-Area Cuadrado");
                     System.out.println("3.-Area Triangulo");
+                    System.out.println("4.-Area Rectangulo");
                     opcion = lector.nextInt();
                     if (opcion == 1) {
                         System.out.println("Ingrese el radio del circulo");
@@ -72,7 +86,17 @@ public class Calculadora {
                         double areaT = (base*altura)/2;
                         System.out.println("El Area del Triangulo es: " + areaT);
                     }
+                     if (opcion == 4) {
+                        System.out.println("Ingrese la base del Rectangulo");
+                        int lado = lector.nextInt();
+                        System.out.println("Ingrese la altura del Rectangulo");
+                        int altura = lector.nextInt();
+                        double areaR = lado*altura;
+                        System.out.println("El Area del Rectangulo es: " + areaR);
+                        
+                    }
                     break;
+                    
             }
         } while (opcion != 0);
     }
