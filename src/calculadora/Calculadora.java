@@ -7,9 +7,11 @@ public class Calculadora {
 
    
     public static void main(String[] args) {
+     Scanner lector = new Scanner(System.in);
+                            
+                            
         int opcion = 0;
         do {
-            Scanner lector = new Scanner(System.in);
             System.out.println("");
             System.out.println("***Calculadora***");
             System.out.println("Ingrese, segun corresponda:");
