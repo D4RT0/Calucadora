@@ -13,16 +13,19 @@ import java.util.Scanner;
  */
 
 public class Calculadora { // clase encargada de calcular el area y perimetro de las figuras
-
+    
+private String calculadora ="casio";
    
     public static void main(String[] args) {
      Scanner lector = new Scanner(System.in);
+     
+     Calculadora calc = new Calculadora();
                             
                             
         int opcion = 3;
         while (opcion != 0){
             System.out.println("");
-            System.out.println("***Calculadora***");
+            System.out.println("***"+ calc.calculadora + "***");
             System.out.println("Ingrese, segun corresponda:");
             System.out.println("1.-Calcular Perimetro");
             System.out.println("2.-Calcular Area");
