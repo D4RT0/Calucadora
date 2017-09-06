@@ -10,7 +10,8 @@ package calculadora;
  * @author Darto
  */
 import java.util.Scanner;
-public class Calculadora { // clase encargada de calcular el area y perimetro de las figuras
+
+class Calculadora { 
 
 
     public static double perimetro(int lado, int radio, int opcion) {
@@ -54,7 +55,8 @@ public class Calculadora { // clase encargada de calcular el area y perimetro de
         Scanner lector = new Scanner(System.in);
 
         int opcion = 3;
-        double per,are ;
+        double per;
+        double  are ;
         while (opcion != 0) {
             System.out.println("");
             System.out.println("*** Welcome ***");
