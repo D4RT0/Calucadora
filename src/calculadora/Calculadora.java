@@ -1,17 +1,26 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
 package calculadora;
 
 import java.util.Scanner;
+/**
+ *
+ * @author Dario, Felipe, Frances
+ */
 
-
-public class Calculadora {
+public class Calculadora { // clase encargada de calcular el area y perimetro de las figuras
 
    
     public static void main(String[] args) {
      Scanner lector = new Scanner(System.in);
                             
                             
-        int opcion = 0;
-        do {
+        int opcion = 3;
+        while (opcion != 0){
             System.out.println("");
             System.out.println("***Calculadora***");
             System.out.println("Ingrese, segun corresponda:");
@@ -21,7 +30,7 @@ public class Calculadora {
 
             opcion = lector.nextInt();
 
-            switch (opcion) {
+            switch  (opcion) {
                 case 1:
                     System.out.println("1.-Perimetro Circulo");
                     System.out.println("2.-Perimetro Cuadrado");
@@ -99,8 +108,13 @@ public class Calculadora {
                     }
                     break;
                     
-            }
-        } while (opcion != 0);
+                default:
+                    break;
+                    
+                    
+                }
+        }
+      
     }
 
 }
