@@ -16,6 +16,7 @@ class Calculadora {
 
 
     public static double perimetro(int lado, int radio, int opcion) {
+        Calculadora cal = new Calculadora ();
         double area = 0;
         if (opcion == 1) {
             double pi = 3.14;
@@ -30,6 +31,7 @@ class Calculadora {
         if (opcion == 4) {
             area = (lado * 2) + (radio * 2);
         }
+         System.out.println("***"+cal.calculadora +"***");
         return area;
     }
 
