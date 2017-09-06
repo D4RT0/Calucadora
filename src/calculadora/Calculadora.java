@@ -12,6 +12,7 @@ package calculadora;
 import java.util.Scanner;
 
 class Calculadora { 
+    private final String calculadora = "Casio";
 
 
     public static double perimetro(int lado, int radio, int opcion) {
@@ -53,11 +54,13 @@ class Calculadora {
 
     public static void main(String[] args) {
         Scanner lector = new Scanner(System.in);
+        
+        Calculadora cal = new Calculadora ();
 
         int opcion = 3;
         while (opcion != 0) {
             System.out.println("");
-            System.out.println("*** Welcome ***");
+            System.out.println("*** "+ cal.calculadora+" ***" );
             System.out.println("Ingrese, segun corresponda:");
             System.out.println("1.-Calcular Perimetro");
             System.out.println("2.-Calcular Area");
