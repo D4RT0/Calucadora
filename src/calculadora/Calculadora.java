@@ -8,13 +8,18 @@ package calculadora;
 /**
  *
  * @author Darto
+ * @version 1.5
+ * @see Calculator
  */
 import java.util.Scanner;
 
 class Calculadora { 
     private final String calculadora = "Casio";
 
-
+/**
+ *
+ * @return double con perimetro
+ */
     public static double perimetro(int lado, int radio, int opcion) {
         Calculadora cal = new Calculadora ();
         double area = 0;
@@ -35,8 +40,12 @@ class Calculadora {
         return area;
     }
 
+    
+ /**
+ *
+ * @return double con area
+ */
     public static double area(int lado, int radio, int opcion) {
-         Calculadora cal = new Calculadora ();
         double area = 0;
         if (opcion == 1) {
             double pi = 3.14;
@@ -51,10 +60,15 @@ class Calculadora {
         if (opcion == 4) {
             area = lado * radio;
         }
-        System.out.println("***"+cal.calculadora +"***");
+      
         return area;
     }
-
+    
+    
+ /**
+ *
+ * @return llamados a funciones
+ */
     public static void main(String[] args) {
         Scanner lector = new Scanner(System.in);
         
