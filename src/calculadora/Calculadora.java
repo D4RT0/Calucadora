@@ -55,8 +55,6 @@ class Calculadora {
         Scanner lector = new Scanner(System.in);
 
         int opcion = 3;
-        double per;
-        double  are ;
         while (opcion != 0) {
             System.out.println("");
             System.out.println("*** Welcome ***");
@@ -78,20 +76,20 @@ class Calculadora {
                 if (opcion == 1) {
                     System.out.println("Ingrese el radio del circulo");
                     int radio = lector.nextInt();
-                    per = perimetro(0, radio, opcion);
-                    System.out.println("El perimetro es" + per);
+                    double per = perimetro(0, radio, opcion);
+                    System.out.println("resultado del perimetro:" + per);
                 }
                 if (opcion == 2) {
                     System.out.println("Ingrese el lado del cuadrado");
                     int lado = lector.nextInt();
-                    per = perimetro(lado, 0, opcion);
+                    double per = perimetro(lado, 0, opcion);
                     System.out.println("El perimetro es" + per);
 
                 }
                 if (opcion == 3) {
                     System.out.println("Ingrese el lado del triangulo");
                     int lado = lector.nextInt();
-                    per = perimetro(lado, 0, opcion);
+                    double per = perimetro(lado, 0, opcion);
                     System.out.println("El perimetro es" + per);
 
                 }
@@ -100,7 +98,7 @@ class Calculadora {
                     int lado = lector.nextInt();
                     System.out.println("Ingrese la base del rectangulo");
                     int base = lector.nextInt();
-                    per = perimetro(lado, base, opcion);
+                   double per = perimetro(lado, base, opcion);
                     System.out.println("El perimetro es" + per);
                 }
 
@@ -114,13 +112,13 @@ class Calculadora {
                 if (opcion == 1) {
                     System.out.println("Ingrese el radio del circulo");
                     int radio = lector.nextInt();
-                    are = area(0, radio, opcion);
-                    System.out.println("El area es" + are);
+                   double are = area(0, radio, opcion);
+                    System.out.println("El area del circulo es" + are);
                 }
                 if (opcion == 2) {
                     System.out.println("Ingrese el lado del cuadrado");
                     int lado = lector.nextInt();
-                    are = area(lado, 0, opcion);
+                   double are = area(lado, 0, opcion);
                     System.out.println("El area es" + are);
 
                 }
@@ -129,7 +127,7 @@ class Calculadora {
                     int lado = lector.nextInt();
                     System.out.println("Ingrese la base del triangulo");
                     int base = lector.nextInt();
-                    are = perimetro(lado, base, opcion);
+                    double are = perimetro(lado, base, opcion);
                     System.out.println("El area es" + are);
 
                 }
@@ -138,7 +136,7 @@ class Calculadora {
                     int lado = lector.nextInt();
                     System.out.println("Ingrese la base del rectangulo");
                     int base = lector.nextInt();
-                    are = perimetro(lado, base, opcion);
+                   double are = perimetro(lado, base, opcion);
                     System.out.println("El area es" + are);
                 }
 
