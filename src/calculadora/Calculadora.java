@@ -5,16 +5,13 @@
  */
 package calculadora;
 
-import java.util.Scanner;
-
 /**
  *
  * @author Darto
  */
-
+import java.util.Scanner;
 public class Calculadora { // clase encargada de calcular el area y perimetro de las figuras
 
-    private final String calculadora = "casio";
 
     public static double perimetro(int lado, int radio, int opcion) {
         double area = 0;
@@ -56,12 +53,11 @@ public class Calculadora { // clase encargada de calcular el area y perimetro de
     public static void main(String[] args) {
         Scanner lector = new Scanner(System.in);
 
-        Calculadora calc = new Calculadora();
         int opcion = 3;
-        double resultado = 0;
+        double per,are ;
         while (opcion != 0) {
             System.out.println("");
-            System.out.println("***" + calc.calculadora + "***");
+            System.out.println("*** Welcome ***");
             System.out.println("Ingrese, segun corresponda:");
             System.out.println("1.-Calcular Perimetro");
             System.out.println("2.-Calcular Area");
@@ -80,21 +76,21 @@ public class Calculadora { // clase encargada de calcular el area y perimetro de
                 if (opcion == 1) {
                     System.out.println("Ingrese el radio del circulo");
                     int radio = lector.nextInt();
-                    resultado = perimetro(0, radio, opcion);
-                    System.out.println("El perimetro es" + resultado);
+                    per = perimetro(0, radio, opcion);
+                    System.out.println("El perimetro es" + per);
                 }
                 if (opcion == 2) {
                     System.out.println("Ingrese el lado del cuadrado");
                     int lado = lector.nextInt();
-                    resultado = perimetro(lado, 0, opcion);
-                    System.out.println("El perimetro es" + resultado);
+                    per = perimetro(lado, 0, opcion);
+                    System.out.println("El perimetro es" + per);
 
                 }
                 if (opcion == 3) {
                     System.out.println("Ingrese el lado del triangulo");
                     int lado = lector.nextInt();
-                    resultado = perimetro(lado, 0, opcion);
-                    System.out.println("El perimetro es" + resultado);
+                    per = perimetro(lado, 0, opcion);
+                    System.out.println("El perimetro es" + per);
 
                 }
                 if (opcion == 4) {
@@ -102,8 +98,8 @@ public class Calculadora { // clase encargada de calcular el area y perimetro de
                     int lado = lector.nextInt();
                     System.out.println("Ingrese la base del rectangulo");
                     int base = lector.nextInt();
-                    resultado = perimetro(lado, base, opcion);
-                    System.out.println("El perimetro es" + resultado);
+                    per = perimetro(lado, base, opcion);
+                    System.out.println("El perimetro es" + per);
                 }
 
             } else if (opcion == 2) {
@@ -116,14 +112,14 @@ public class Calculadora { // clase encargada de calcular el area y perimetro de
                 if (opcion == 1) {
                     System.out.println("Ingrese el radio del circulo");
                     int radio = lector.nextInt();
-                    resultado = area(0, radio, opcion);
-                    System.out.println("El area es" + resultado);
+                    are = area(0, radio, opcion);
+                    System.out.println("El area es" + are);
                 }
                 if (opcion == 2) {
                     System.out.println("Ingrese el lado del cuadrado");
                     int lado = lector.nextInt();
-                    resultado = area(lado, 0, opcion);
-                    System.out.println("El area es" + resultado);
+                    are = area(lado, 0, opcion);
+                    System.out.println("El area es" + are);
 
                 }
                 if (opcion == 3) {
@@ -131,8 +127,8 @@ public class Calculadora { // clase encargada de calcular el area y perimetro de
                     int lado = lector.nextInt();
                     System.out.println("Ingrese la base del triangulo");
                     int base = lector.nextInt();
-                    resultado = perimetro(lado, base, opcion);
-                    System.out.println("El area es" + resultado);
+                    are = perimetro(lado, base, opcion);
+                    System.out.println("El area es" + are);
 
                 }
                 if (opcion == 4) {
@@ -140,8 +136,8 @@ public class Calculadora { // clase encargada de calcular el area y perimetro de
                     int lado = lector.nextInt();
                     System.out.println("Ingrese la base del rectangulo");
                     int base = lector.nextInt();
-                    resultado = perimetro(lado, base, opcion);
-                    System.out.println("El area es" + resultado);
+                    are = perimetro(lado, base, opcion);
+                    System.out.println("El area es" + are);
                 }
 
             }
