@@ -9,7 +9,7 @@ package calculadora;
  *
  * @author Darto
  * @version 1.5
- * @see Calculator
+ * 
  */
 import java.util.Scanner;
 
@@ -65,7 +65,10 @@ class Calculadora {
     }
     
     
-
+ /**
+ *
+ * @param args Array de argumentos
+ */
     public static void main(String[] args) {
         Scanner lector = new Scanner(System.in);
         
